@@ -1,0 +1,179 @@
+<html>
+
+    <head> 
+        <title> Calculadora </title> 
+    </head>
+
+
+    <body>
+
+      <div class="panel">
+       <p class="p1"> Valor 1</p> 
+       <input type="text" class="value1" id="value1">
+       <p class="p2"> Valor 2</p>
+       <input type="text" class="value2" id="value2">
+
+       <button onclick="suma()" class="suma"> + </button>
+       <button onclick="resta()" class="resta"> - </button>
+       <button onclick="division()" class="division"> / </button>
+       <button onclick="multiplicacion()" class="multiplicacion"> * </button>
+
+      </div>
+
+    </body>
+
+
+    <script>
+      
+        function suma(){
+           value1 = parseFloat(document.getElementById("value1").value);
+           value2 = parseFloat(document.getElementById("value2").value);
+
+           resultado = value1 + value2;
+           alert("el resultado va a ser " + resultado);
+        }
+
+        function resta(){
+            value1 = parseFloat(document.getElementById("value1").value);
+            value2 = parseFloat(document.getElementById("value2").value);
+
+            resultado = value1 - value2;
+            alert("el resultado va a ser " + resultado);
+        }
+
+        function division(){
+            value1 = parseFloat(document.getElementById("value1").value);
+            value2 = parseFloat(document.getElementById("value2").value);
+
+            resultado = value1 / value2;
+            alert("el resultado va a ser " + resultado);
+        }
+
+        function multiplicacion(){
+            value1 = parseFloat(document.getElementById("value1").value);
+            value2 = parseFloat(document.getElementById("value2").value);
+
+            resultado = value1 * value2;
+            alert("el resultado va a ser " + resultado);
+        }
+
+
+    </script>
+
+
+    <style>
+
+      .panel{
+        margin-left: 450px;
+        margin-top: 200px;
+        border-radius: 120px;
+        height: 400px;
+        width: 400px;
+        background-color: azure;
+      }
+
+      .p1{
+        position: absolute;
+        margin-top: 100px;
+        margin-left: 60px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 20px;   
+      }
+
+      .p2{
+        position: absolute;
+        margin-top: 200px;
+        margin-left: 60px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 20px;   
+      }
+
+
+      .value1{
+        position: absolute;
+        margin-top: 130px;
+        margin-left: 60px;
+        width: 200px;
+        height: 30px;
+        border-radius: 20px;
+        background-color: rgb(245, 245, 214);
+      }
+
+      .value2{
+        position: absolute;
+        margin-top: 230px;
+        margin-left: 60px;
+        width: 200px;
+        height: 30px;
+        border-radius: 20px;
+        background-color: rgb(245, 245, 214);
+      }
+
+      .suma{
+        position: absolute;
+        margin-top: 120px;
+        margin-left: 300px;
+        width: 40px;
+        height: 40px;
+        font-size: 30px;
+        border-radius: 20px;
+        background-color: rgb(245, 245, 214);
+      }
+
+      .suma:hover{
+        transition: 1s;
+        background-color: rgb(230, 230, 154);
+      }
+
+      .resta{
+        position: absolute;
+        margin-top: 165px;
+        margin-left: 300px;
+        width: 40px;
+        height: 40px;
+        font-size: 30px;
+        border-radius: 20px;
+        background-color: rgb(245, 245, 214);
+      }
+
+      .resta:hover{
+        transition: 1s;
+        background-color: rgb(230, 230, 154);
+      }
+
+      .division{
+        position: absolute;
+        margin-top: 210px;
+        margin-left: 300px;
+        width: 40px;
+        height: 40px;
+        font-size: 30px;
+        border-radius: 20px;
+        background-color: rgb(245, 245, 214);
+      }
+
+      .division:hover{
+        transition: 1s;
+        background-color: rgb(230, 230, 154);
+      }
+
+      .multiplicacion{
+        position: absolute;
+        margin-top: 255px;
+        margin-left: 300px;
+        width: 40px;
+        height: 40px;
+        font-size: 30px;
+        border-radius: 20px;
+        background-color: rgb(245, 245, 214);
+      }
+
+      .multiplicacion:hover{
+        transition: 1s;
+        background-color: rgb(230, 230, 154);
+      }
+
+
+    </style>
+
+</html>
